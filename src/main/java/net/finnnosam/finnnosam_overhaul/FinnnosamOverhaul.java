@@ -1,6 +1,7 @@
 package net.finnnosam.finnnosam_overhaul;
 
 import com.mojang.logging.LogUtils;
+import net.finnnosam.finnnosam_overhaul.block.ModBlocks;
 import net.finnnosam.finnnosam_overhaul.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -16,7 +17,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
-
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(FinnnosamOverhaul.MOD_ID)
 public class FinnnosamOverhaul {
@@ -32,7 +32,7 @@ public class FinnnosamOverhaul {
         MinecraftForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
-
+        ModBlocks.register(modEventBus);
 
 
         // Register the item to a creative tab
@@ -50,6 +50,11 @@ public class FinnnosamOverhaul {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.TESTITEM);
             event.accept(ModItems.RAW_TESTITEM);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.TEST_BLOCK);
+            event.accept(ModBlocks.RAW_TEST_BLOCK);
         }
     }
 

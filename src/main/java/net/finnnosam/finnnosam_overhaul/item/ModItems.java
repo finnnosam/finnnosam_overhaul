@@ -7,6 +7,19 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+// How to add an Item:
+//public static final RegistryObject<Item> TESTITEM = ITEMS.register("test_item",
+//        () -> new Item(new Item.Properties()));
+//Over here ^
+
+//Then add a name line in lang/en_us.json
+//Then copy/paste models/item/xx_.json, rename stuff inside
+//add picture
+
+//don't forget
+//event.accept(ModItems.TESTITEM);
+//over in addCreative inside FinnnosamOverhaul.java
+
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, FinnnosamOverhaul.MOD_ID);
