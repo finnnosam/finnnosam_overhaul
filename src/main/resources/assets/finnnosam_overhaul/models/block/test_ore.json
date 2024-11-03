@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "finnnosam_overhaul:block/test_ore"
+  }
+}

@@ -33,6 +33,8 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.TEST_BLOCK.get());
                         output.accept(ModBlocks.RAW_TEST_BLOCK.get());
+                        output.accept(ModBlocks.TEST_ORE.get());
+                        output.accept(ModBlocks.TEST_DEEPSLATE_ORE.get());
 
                     }).build());
 

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "test_item",
+  "ingredient": {
+    "item": "finnnosam_overhaul:raw_test_item"
+  },
+  "result": {
+    "id": "finnnosam_overhaul:test_item"
+  }
+}

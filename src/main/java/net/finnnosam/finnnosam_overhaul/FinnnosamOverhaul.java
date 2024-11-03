@@ -1,5 +1,8 @@
 package net.finnnosam.finnnosam_overhaul;
 
+//Folder that holds all vanilla files under External Libraries:
+//net.minecraft:client:extra:1.21
+
 import com.mojang.logging.LogUtils;
 import net.finnnosam.finnnosam_overhaul.block.ModBlocks;
 import net.finnnosam.finnnosam_overhaul.item.ModCreativeModeTabs;

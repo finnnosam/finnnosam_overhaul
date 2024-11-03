@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "finnnosam_overhaul:test_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "finnnosam_overhaul:test_item"
+  }
+}
