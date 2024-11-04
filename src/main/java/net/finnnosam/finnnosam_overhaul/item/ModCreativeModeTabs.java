@@ -21,6 +21,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.TESTITEM.get());
                         output.accept(ModItems.RAW_TESTITEM.get());
 
+                        output.accept(ModItems.CHISEL.get());
+
                     }).build());
 // End of main code to copy
 // don't forget .withTabsBefore(TEST_ITEMS_TAB.getId())

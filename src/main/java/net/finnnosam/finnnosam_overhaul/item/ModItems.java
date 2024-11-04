@@ -1,6 +1,7 @@
 package net.finnnosam.finnnosam_overhaul.item;
 
 import net.finnnosam.finnnosam_overhaul.FinnnosamOverhaul;
+import net.finnnosam.finnnosam_overhaul.item.custom.ChiselItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -28,6 +29,10 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_TESTITEM = ITEMS.register("raw_test_item",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> CHISEL = ITEMS.register("chisel",
+            () -> new ChiselItem(new Item.Properties().durability(32)));
+
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
