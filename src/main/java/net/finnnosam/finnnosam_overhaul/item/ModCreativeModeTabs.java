@@ -20,6 +20,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.TESTITEM.get());
                         output.accept(ModItems.RAW_TESTITEM.get());
+                        output.accept(ModItems.COAL_ASHES.get());
 
                         output.accept(ModItems.TESTFOOD.get());
 
