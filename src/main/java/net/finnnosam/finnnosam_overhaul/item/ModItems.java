@@ -2,6 +2,7 @@ package net.finnnosam.finnnosam_overhaul.item;
 
 import net.finnnosam.finnnosam_overhaul.FinnnosamOverhaul;
 import net.finnnosam.finnnosam_overhaul.item.custom.ChiselItem;
+import net.finnnosam.finnnosam_overhaul.item.custom.ModFoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -32,6 +33,14 @@ public class ModItems {
 
     public static final RegistryObject<Item> CHISEL = ITEMS.register("chisel",
             () -> new ChiselItem(new Item.Properties().durability(32)));
+
+
+    public static final RegistryObject<Item> TESTFOOD = ITEMS.register("test_food",
+            () -> new ChiselItem(new Item.Properties()
+                    .food(ModFoodProperties.TESTFOOD)
+
+            ));
+
 
 
     public static void register(IEventBus eventBus){

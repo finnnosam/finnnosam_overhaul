@@ -2,7 +2,10 @@
   "item.finnnosam_overhaul.test_item": "Test Item",
   "item.finnnosam_overhaul.raw_test_item": "Raw Test Item",
 
+  "item.finnnosam_overhaul.test_food": "Test Food",
+
   "item.finnnosam_overhaul.chisel": "Chisel",
+
 
 
   "block.finnnosam_overhaul.test_block": "Test Block",
@@ -11,6 +14,7 @@
   "block.finnnosam_overhaul.test_deepslate_ore": "Test Deepslate Ore",
 
   "block.finnnosam_overhaul.magic_block": "Magic Block",
+
 
 
   "creativetab.finnnosam_overhaul.test_items": "Test Items",
