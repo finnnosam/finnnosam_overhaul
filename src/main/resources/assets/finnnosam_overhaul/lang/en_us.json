@@ -4,8 +4,11 @@
   "item.finnnosam_overhaul.coal_ashes": "Coal Ashes",
 
   "item.finnnosam_overhaul.test_food": "Test Food",
+  "tooltip.finnnosam_overhaul.test_food": "Can give jump boost",
 
   "item.finnnosam_overhaul.chisel": "Chisel",
+  "tooltip.finnnosam_overhaul.chisel": "Press §eShift§r for more information",
+  "tooltip.finnnosam_overhaul.chisel.shift_down": "This item converts some blocks to others",
 
 
 
@@ -15,9 +18,11 @@
   "block.finnnosam_overhaul.test_deepslate_ore": "Test Deepslate Ore",
 
   "block.finnnosam_overhaul.magic_block": "Magic Block",
+  "tooltip.finnnosam_overhaul.magic_block.tooltip": "This §9Block§r converts some items to others.",
 
 
 
   "creativetab.finnnosam_overhaul.test_items": "Test Items",
   "creativetab.finnnosam_overhaul.test_blocks": "Test Blocks"
+
 }

@@ -4,11 +4,16 @@ import net.finnnosam.finnnosam_overhaul.FinnnosamOverhaul;
 import net.finnnosam.finnnosam_overhaul.item.custom.ChiselItem;
 import net.finnnosam.finnnosam_overhaul.item.custom.FuelItem;
 import net.finnnosam.finnnosam_overhaul.item.custom.ModFoodProperties;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import java.util.List;
 
 // How to add an Item:
 //public static final RegistryObject<Item> TESTITEM = ITEMS.register("test_item",
@@ -39,9 +44,15 @@ public class ModItems {
 
 
     public static final RegistryObject<Item> TESTFOOD = ITEMS.register("test_food",
-            () -> new ChiselItem(new Item.Properties()
-                    .food(ModFoodProperties.TESTFOOD)
-            ));
+            () -> new Item(new Item.Properties()
+                    .food(ModFoodProperties.TESTFOOD)){
+                @Override
+                public void appendHoverText(ItemStack pStack, TooltipContext pContext, List<Component> pTooltipComponents, TooltipFlag pTooltipFlag) {
+                    pTooltipComponents.add(Component.translatable("tooltip.finnnosam_overhaul.test_food"));
+
+                    super.appendHoverText(pStack, pContext, pTooltipComponents, pTooltipFlag);
+                }
+            });
 
 
     public static final RegistryObject<Item> COAL_ASHES = ITEMS.register("coal_ashes",
