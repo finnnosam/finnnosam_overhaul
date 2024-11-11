@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "A": {
-      "item": "finnnosam_overhaul:test_item"
+      "tag": "finnnosam_overhaul:transformable_items"
     }
   },
   "pattern": [
